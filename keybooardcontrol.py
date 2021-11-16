@@ -46,6 +46,10 @@ def getKeyboardInput():
     if kp.getKey("e"):
         tello.takeoff()
         # takeoff drone
+       
+    if kp.getKey("f"):
+        tello.flip_forward()
+        # forward flip
 
     return [lr, fb, ud, yv]
 
